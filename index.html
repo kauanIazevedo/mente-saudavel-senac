@@ -3,29 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mente Saudável</title>
 </head>
 
 <body>
+
+    <!-- CABEÇALHO -->
     <header>
-        <h1>Bem-vindo ao Mente Saudável</h1>
-        <h2>Equilíbrio é saúde</h2>
-        <!-- Botão para Mensagens -->
-        <button onclick="location.href='mensagem.html'">Mensagens</button>
-        <!-- Botão para Cadastro -->
-        <button onclick="location.href='cadastro.html'">Cadastro</button>
-        <!-- Botão para Login -->
-        <button onclick="location.href='login.html'">Login</button>
-        <!-- Botão para Quiz -->
-        <button onclick="location.href='quiz.html'">Quiz</button>
-        <p>Este é um projeto dedicado à promoção da saúde mental e bem-estar.</p>
-        <text>Nossa Missão e propósito são acolher e apoiar indivíduos na jornada pela saúde mental.
-            Assim, buscamos ajudar pessoas a desenvolverem estratégias para lidar com os desafios da vida
-            e promoverem seu bem-estar emocional.</text>
+        <h1>Mente Saudável</h1>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav>
+            <a href="#inicio">Início</a> |
+            <a href="#sobre">Saúde Mental</a> |
+            <a href="#curiosidades">Curiosidades</a> |
+            <a href="#termometro">Termômetro</a> |
+            <a href="#quiz">Quiz</a> |
+            <a href="#mural">Mural Virtual</a>
+        </nav>
     </header>
+
+    <hr>
+
+    <!-- PÁGINA DE ENTRADA -->
     <main>
+
+        <section id="inicio">
+            <h2>Seja bem-vindo!</h2>
+
+            <p>
+                Bem-vindo ao Mente Saudável, um espaço criado para
+                aprender, refletir e conversar sobre saúde mental.
+            </p>
+
+            <p>
+                Cuidar da mente é tão importante quanto cuidar do corpo.
+                Pequenas atitudes no dia a dia podem contribuir para
+                uma vida mais equilibrada e saudável.
+            </p>
+        </section>
+
+        <hr>
+
+        <h3>Mural Virtual</h3>
+
         <section id="carrosel de mensagens">
-            <h2>Frases motivacionais dos alunos:</h2>
+            <h2>Mural motivacional:</h2>
             <marquee behavior="scroll" direction="left">
                 <b>Felippe:</b> Olá, tudo bem? &nbsp;&nbsp;
                 <b>Ana:</b> Sim, e você? &nbsp;&nbsp;
@@ -45,23 +69,408 @@
             </ul>
         </section>
 
+        <hr>
 
         </section>
-        <section id="Informativo">
-            <h2>Informativo sobre Saúde Mental</h2>
-            Definição de saúde mental: estado de bem-estar emocional, psicológico e social, que permite lidar com o
-            estresse da vida, trabalhar produtivamente e contribuir para a comunidade.
 
-            Importância do autocuidado: sono adequado, alimentação equilibrada, exercícios físicos e lazer.
+        <!-- INFORMAÇÕES SOBRE SAÚDE MENTAL -->
+        <section id="sobre">
+            <h2>Sobre a Saúde Mental</h2>
 
-            Sinais de alerta: mudanças de humor, isolamento social, insônia ou dificuldade de concentração.
+            <p>
+                Saúde mental está relacionada à forma como lidamos com
+                nossos pensamentos, sentimentos, emoções, relacionamentos
+                e situações do cotidiano.
+            </p>
 
-            Profissionais de apoio: psicólogos, psiquiatras e terapeutas ocupacionais.
-            Recursos de apoio: linhas de ajuda, grupos de apoio e aplicativos de meditação.
+            <p>
+                Ter saúde mental não significa estar feliz o tempo todo.
+                É normal passar por momentos de tristeza, preocupação,
+                estresse ou ansiedade. O importante é reconhecer nossos
+                sentimentos e buscar apoio quando necessário.
+            </p>
+
+            <div>
+                <h3>Mente Saudável</h3>
+
+                <img src="https://via.placeholder.com/500x300" alt="Imagem representando uma mente saudável"
+                    width="500">
+
+                <p>
+                    Uma mente saudável envolve autoconhecimento,
+                    equilíbrio emocional, relacionamentos positivos,
+                    momentos de descanso e a capacidade de pedir ajuda
+                    quando precisamos.
+                </p>
+
+                <p>
+                    Conversar com pessoas de confiança e procurar
+                    profissionais especializados são atitudes importantes
+                    para cuidar da saúde mental.
+                </p>
+            </div>
         </section>
+
+        <hr>
+
+        <!-- CURIOSIDADES -->
+        <section id="curiosidades">
+            <h2>Você Sabia?</h2>
+
+            <article>
+                <h3>Curiosidade 1</h3>
+                <p>
+                    Dormir bem contribui para o funcionamento adequado
+                    do cérebro e pode ajudar na regulação das emoções.
+                </p>
+            </article>
+
+            <article>
+                <h3>Curiosidade 2</h3>
+                <p>
+                    Praticar atividades físicas regularmente pode
+                    contribuir para o bem-estar físico e mental.
+                </p>
+            </article>
+
+            <article>
+                <h3>Curiosidade 3</h3>
+                <p>
+                    Conversar sobre aquilo que estamos sentindo pode
+                    ajudar a compreender melhor nossas emoções e
+                    procurar soluções.
+                </p>
+            </article>
+
+            <article>
+                <h3>Curiosidade 4</h3>
+                <p>
+                    Pedir ajuda não é sinal de fraqueza. Procurar apoio
+                    é uma forma importante de cuidar de si mesmo.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- TERMÔMETRO INTERATIVO -->
+        <section id="termometro">
+            <h2>Termômetro do Meu Dia</h2>
+
+            <p>
+                Como você está se sentindo hoje?
+            </p>
+
+            <label for="nivel">
+                Escolha um nível de 0 a 10:
+            </label>
+
+            <br><br>
+
+            <input type="range" id="nivel" name="nivel" min="0" max="10" value="5" oninput="mostrarNivel()">
+
+            <p>
+                Meu nível:
+                <strong id="valorNivel">5</strong>
+            </p>
+
+            <p id="mensagemNivel">
+                Você está em um nível intermediário. Reserve um momento
+                para perceber como está se sentindo.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- QUIZ -->
+        <section id="quiz">
+            <h2>Quiz - Mente Saudável</h2>
+
+            <form onsubmit="verificarQuiz(event)">
+
+                <fieldset>
+                    <legend>1. Qual atitude pode contribuir para a saúde mental?</legend>
+
+                    <label>
+                        <input type="radio" name="pergunta1" value="a">
+                        Ignorar todos os sentimentos
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="pergunta1" value="b">
+                        Buscar equilíbrio e apoio quando necessário
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="pergunta1" value="c">
+                        Evitar qualquer contato social
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="pergunta1" value="d">
+                        Nunca falar sobre problemas
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>2. Pedir ajuda quando estamos passando por dificuldades é:</legend>
+
+                    <label>
+                        <input type="radio" name="pergunta2" value="a">
+                        Uma atitude de cuidado
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="pergunta2" value="b">
+                        Um sinal de fraqueza
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="pergunta2" value="c">
+                        Algo que deve ser evitado
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="pergunta2" value="d">
+                        Algo desnecessário
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>3. Qual atividade pode ajudar no bem-estar?</legend>
+
+                    <label>
+                        <input type="radio" name="pergunta3" value="a">
+                        Privação de sono
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="pergunta3" value="b">
+                        Isolamento constante
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="pergunta3" value="c">
+                        Atividade física regular
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="radio" name="pergunta3" value="d">
+                        Ignorar emoções
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">
+                    Ver resultado
+                </button>
+            </form>
+
+            <p id="resultadoQuiz"></p>
+        </section>
+        <hr>
+
     </main>
+
+    <!-- MURAL VIRTUAL -->
+    <section id="mural">
+        <h2>Escreva sua mensagem</h2>
+
+        <p>
+            Compartilhe uma mensagem positiva, uma reflexão ou
+            uma palavra de incentivo.
+        </p>
+
+        <form onsubmit="publicarMensagem(event)">
+
+            <label for="nome">
+                Seu nome:
+            </label>
+
+            <br>
+
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            <br><br>
+
+            <label for="mensagem">
+                Sua mensagem:
+            </label>
+
+            <br>
+
+            <textarea id="mensagem" rows="6" cols="50" placeholder="Escreva sua mensagem..." required></textarea>
+
+            <br><br>
+
+            <button type="submit">
+                Publicar no mural
+            </button>
+        </form>
+
+        <hr>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <p>
+                &copy; 2026 Mente Saudável - Informação e conscientização
+                sobre saúde mental.
+            </p>
+
+            <p>
+                Este site possui caráter educativo e não substitui
+                orientação de profissionais de saúde.
+            </p>
+        </footer>
+
+
+        <!-- JAVASCRIPT -->
+        <script>
+
+            // TERMÔMETRO
+            function mostrarNivel() {
+
+                const nivel = document.getElementById("nivel").value;
+                const valor = document.getElementById("valorNivel");
+                const mensagem = document.getElementById("mensagemNivel");
+
+                valor.textContent = nivel;
+
+                if (nivel <= 2) {
+
+                    mensagem.textContent =
+                        "Parece que hoje está sendo um dia difícil. Procure conversar com alguém de confiança e cuide de você.";
+
+                } else if (nivel <= 4) {
+
+                    mensagem.textContent =
+                        "Talvez seja um bom momento para fazer uma pausa e observar como você está se sentindo.";
+
+                } else if (nivel <= 7) {
+
+                    mensagem.textContent =
+                        "Você está em um nível intermediário. Reserve um momento para perceber suas necessidades.";
+
+                } else if (nivel <= 9) {
+
+                    mensagem.textContent =
+                        "Que bom! Aproveite esse momento e continue cuidando do seu bem-estar.";
+
+                } else {
+
+                    mensagem.textContent =
+                        "Você parece estar se sentindo muito bem hoje! Compartilhe essa energia positiva.";
+
+                }
+            }
+
+
+            // QUIZ
+            function verificarQuiz(event) {
+
+                event.preventDefault();
+
+                let pontos = 0;
+
+                const resposta1 =
+                    document.querySelector('input[name="pergunta1"]:checked');
+
+                const resposta2 =
+                    document.querySelector('input[name="pergunta2"]:checked');
+
+                const resposta3 =
+                    document.querySelector('input[name="pergunta3"]:checked');
+
+                if (resposta1 && resposta1.value === "b") {
+                    pontos++;
+                }
+
+                if (resposta2 && resposta2.value === "a") {
+                    pontos++;
+                }
+
+                if (resposta3 && resposta3.value === "c") {
+                    pontos++;
+                }
+
+                const resultado =
+                    document.getElementById("resultadoQuiz");
+
+                resultado.textContent =
+                    "Você acertou " + pontos + " de 3 perguntas.";
+
+                if (pontos === 3) {
+                    resultado.textContent +=
+                        " Parabéns! Você demonstrou bons conhecimentos sobre saúde mental.";
+                } else if (pontos >= 2) {
+                    resultado.textContent +=
+                        " Muito bem! Continue aprendendo sobre saúde mental.";
+                } else {
+                    resultado.textContent +=
+                        " Continue explorando o conteúdo do Mente Saudável.";
+                }
+            }
+
+
+            // MURAL
+            function publicarMensagem(event) {
+
+                event.preventDefault();
+
+                const nome =
+                    document.getElementById("nome").value;
+
+                const mensagem =
+                    document.getElementById("mensagem").value;
+
+                const mural =
+                    document.getElementById("muralMensagens");
+
+                const novaMensagem =
+                    document.createElement("p");
+
+                const nomeUsuario =
+                    document.createElement("strong");
+
+                nomeUsuario.textContent = nome + ": ";
+
+                novaMensagem.appendChild(nomeUsuario);
+
+                novaMensagem.appendChild(
+                    document.createTextNode(mensagem)
+                );
+
+                mural.appendChild(novaMensagem);
+
+                document.getElementById("nome").value = "";
+                document.getElementById("mensagem").value = "";
+            }
+
+        </script>
+
 </body>
-<footer>
-    <p>&copy; 2026 Mente Saudável. Todos os direitos reservados.</p>
 
 </html>
