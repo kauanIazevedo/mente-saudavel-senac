@@ -4,156 +4,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mente Saudável</title>
+    <title class="titulo-pagina">Mente Saudável</title>
+    <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:wght@400;700&family=Montserrat+Alternates:wght@400;600&family=Madimi+One&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
 
     <!-- CABEÇALHO -->
-    <header>
-        <h1>Mente Saudável</h1>
+    <header class="cabecalho">
+        <div class="container-logo">
+            <img src="img/logo1.jfif" alt="Logo Mente Saudável" class="logo-imagem">
+        <h1 class="titulo-principal">
+            <span class="fonte-mente">Mente</span>
+            <span class="fonte-saudavel">Saudável</span>
+        </h1>
+    <h2 class="subtitulo">Equilíbrio é saúde.</h2>
+        </div>
+
 
         <!-- MENU DE NAVEGAÇÃO -->
-        <nav>
-            <a href="#inicio">Início</a> |
-            <a href="#sobre">Saúde Mental</a> |
-            <a href="#curiosidades">Curiosidades</a> |
-            <a href="#termometro">Termômetro</a> |
-            <a href="#quiz">Quiz</a> |
-            <a href="#mural">Mural Virtual</a>
+        <nav class="menu-navegacao" aria-label="Menu principal">
+            <a class="menu-link" href="#inicio">Início</a>
+            <a class="menu-link" href="#sobre">Saúde Mental</a>
+            <a class="menu-link" href="#curiosidades">Curiosidades</a>
+            <a class="menu-link" href="#termometro">Termômetro</a>
+            <a class="menu-link" href="#quiz">Quiz</a>
+            <a class="menu-link" href="#mural">Mural Virtual</a>
         </nav>
     </header>
-
-    <hr>
 
     <!-- PÁGINA DE ENTRADA -->
     <main>
 
-        <section id="inicio">
-            <h2>Seja bem-vindo!</h2>
+        <section id="inicio" class="secao-hero">
+            <div class="hero-conteudo">
+            <h2 class="hero-titulo">Seja bem-vindo!</h2>
 
-            <p>
-                Bem-vindo ao Mente Saudável, um espaço criado para
-                aprender, refletir e conversar sobre saúde mental.
+                <p class="hero-texto">
+                Este espaço foi criado exclusivamente para os alunos do SENAC, 
+                o portal oferece apoio para você lidar com os desafios dos estudos e 
+                ercado de trabalho. Aqui, você encontra ferramentas, conteúdos e canais de ajuda para
+                cuidar da sua saúde mental. Lembre-se: o seu bem-estar é prioridade. Explore e use o site 
+                sempre que precisar!
             </p>
 
-            <p>
-                Cuidar da mente é tão importante quanto cuidar do corpo.
-                Pequenas atitudes no dia a dia podem contribuir para
-                uma vida mais equilibrada e saudável.
-            </p>
+            <div class="hero-botoes">
+            <a href="#termometro" class="hero-botao-um">Termômetro de Humor</a>
+            <a href="#quiz" class="hero-botao-dois">Fazer o Quiz</a>
+           </div>
+           </div>
         </section>
+        
+    <hr class="hr">
 
-        <hr>
+        <!-- MURAL VIRTUAL -->
+         <section class="mural">
+     <h3 class="mural-titulo">Mural Motivacional</h3>
 
-        <h3>Mural Virtual</h3>
+<div class="carrosel">
+  <div class="carrosel-track">
+    <div class="mensagem">
+      <div class="texto">Cada dia que você consegue levantar da cama já é uma vitória.</div>
+      <div class="rodape"><span class="icone">💚</span><span class="data">24/08/2026</span></div>
+    </div>
+    <div class="mensagem">
+      <div class="texto">A terapia mudou minha vida. Se você está hesitando, dê esse passo.</div>
+      <div class="rodape"><span class="icone">🌼</span><span class="data">22/08/2026</span></div>
+    </div>
+    <div class="mensagem">
+      <div class="texto">Aprendi que pedir ajuda é o ato mais corajoso que existe.</div>
+      <div class="rodape"><span class="icone">💪</span><span class="data">20/08/2026</span></div>
+    </div>
+    <div class="mensagem">
+      <div class="texto">Nunca subestime o poder de um pequeno passo.</div>
+      <div class="rodape"><span class="icone">✨</span><span class="data">18/08/2026</span></div>
+    </div>
+    <div class="mensagem">
+      <div class="texto">Você é capaz de muito mais do que imagina.</div>
+      <div class="rodape"><span class="icone">🔥</span><span class="data">16/08/2026</span></div>
+    </div>
+    <div class="mensagem">
+      <div class="texto">Coragem é seguir mesmo com medo.</div>
+      <div class="rodape"><span class="icone">🌈</span><span class="data">14/08/2026</span></div>
+    </div>
+  </div>
 
-        <section id="carrosel de mensagens">
-            <h2>Mural motivacional:</h2>
-            <marquee behavior="scroll" direction="left">
-                <b>Felippe:</b> Olá, tudo bem? &nbsp;&nbsp;
-                <b>Ana:</b> Sim, e você? &nbsp;&nbsp;
-                <b>João:</b> Vamos marcar algo hoje! &nbsp;&nbsp;
-                <b>Maria:</b> Boa ideia, topo! &nbsp;&nbsp;
-                <b>Carlos:</b> Perfeito, até mais!
-            </marquee>
-        </section>
-        <section id="recursos e dicas">
-            <h2>Recursos e dicas:</h2>
-            <ul>
-                <li>Pratique a gratidão diariamente.</li>
-                <li>Reserve um tempo para atividades que você gosta.</li>
-                <li>Conecte-se com amigos e familiares.</li>
-                <li>Exercite-se regularmente para liberar endorfinas.</li>
-                <li>Busque ajuda profissional quando necessário.</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        </section>
+  <!-- Controles abaixo -->
+  <div class="controles">
+    <button class="btn prev">&#10094;</button>
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <button class="btn next">&#10095;</button>
+  </div>
+</div>
+         </section>
 
         <!-- INFORMAÇÕES SOBRE SAÚDE MENTAL -->
-        <section id="sobre">
-            <h2>Sobre a Saúde Mental</h2>
+    <section id="sobre" class="secao-sobre">
+    <h2 class="sobre-titulo">Sobre a Saúde Mental</h2>
 
-            <p>
-                Saúde mental está relacionada à forma como lidamos com
-                nossos pensamentos, sentimentos, emoções, relacionamentos
-                e situações do cotidiano.
-            </p>
+    <!-- Container Geral do Carrossel -->
+    <div class="carrossel-container">
 
-            <p>
-                Ter saúde mental não significa estar feliz o tempo todo.
-                É normal passar por momentos de tristeza, preocupação,
-                estresse ou ansiedade. O importante é reconhecer nossos
-                sentimentos e buscar apoio quando necessário.
-            </p>
+        <!-- Área dos Slides -->
+        <div class="carrossel-slides">
 
-            <div>
-                <h3>Mente Saudável</h3>
+            <!-- SLIDE 1: O que é saúde mental -->
+            <article class="carrossel-slide-ativo">
+                <div class="carrossel-imagem-wrapper">
+                    <img src="https://picsum.photos" alt="Ilustração de equilíbrio emocional" class="carrossel-img">
+                </div>
+                <div class="carrossel-conteudo">
+                    <h3 class="carrossel-slide-titulo">O que é Saúde Mental?</h3>
+                    <p class="carrossel-texto">
+                        Ela está relacionada à forma como lidamos com nossos pensamentos, 
+                        sentimentos, emoções, relacionamentos e situações do cotidiano.
+                        Ter saúde mental não significa estar feliz o tempo todo. É normal passar por momentos de tristeza, preocupação, estresse ou ansiedade. 
+                        O importante é reconhecer nossos sentimentos e buscar apoio quando necessário.
+                    </p>
+                </div>
+            </article>
 
-                <img src="https://via.placeholder.com/500x300" alt="Imagem representando uma mente saudável"
-                    width="500">
+            <!-- SLIDE 2: Altos e baixos da vida -->
+            <article class="carrossel-slide">
+                <div class="carrossel-imagem-wrapper">
+                    <img src="https://picsum.photos" alt="Pessoa olhando para o horizonte expressando reflexão" class="carrossel-img">
+                </div>
+                <div class="carrossel-conteudo">
+                    <h3 class="carrossel-slide-titulo">Reconhecer e Buscar Apoio</h3>
+                    <p class="carrossel-texto">
+                        Uma mente saudável envolve autoconhecimento, equilíbrio emocional, relacionamentos positivos, momentos de descanso e a capacidade de pedir ajuda quando precisamos. 
+                        Conversar com pessoas de confiança e procurar profissionais especializados são atitudes importantes para cuidar da saúde mental.
+                    </p>
+                </div>
+            </article>
 
-                <p>
-                    Uma mente saudável envolve autoconhecimento,
-                    equilíbrio emocional, relacionamentos positivos,
-                    momentos de descanso e a capacidade de pedir ajuda
-                    quando precisamos.
-                </p>
+        </div>
 
-                <p>
-                    Conversar com pessoas de confiança e procurar
-                    profissionais especializados são atitudes importantes
-                    para cuidar da saúde mental.
-                </p>
-            </div>
+        <!-- Botões de Navegação (Anterior e Próximo) -->
+        <button class="carrossel-btn btn-anterior" aria-label="Slide anterior">&#10094;</button>
+        <button class="carrossel-btn btn-proximo" aria-label="Próximo slide">&#10095;</button>
+
+        <!-- Indicadores de Bolinhas (Paginação) -->
+        <div class="carrossel-indicadores">
+            <span class="indicador ativo" data-slide="0"></span>
+            <span class="indicador" data-slide="1"></span>
+            <span class="indicador" data-slide="2"></span>
+        </div>
+
+        </div>
         </section>
 
-        <hr>
+    <hr class="hr">
 
         <!-- CURIOSIDADES -->
-        <section id="curiosidades">
-            <h2>Você Sabia?</h2>
+       <section id="dicas-curiosidades" class="secao-areas-cuidado">
+    <h2 class="titulo-areas">Áreas de Cuidado</h2>
+    <div class="cards-container">
+        <!--Card1-->
+        <article class="card">
+            <div class="card-body">
+                <h5 class="card-title">O peso do estresse diário</h5>
+                    <p class="card-text">Prazos e cobranças acumulam tensões que esgotam nossa energia mental. 
+                        Pequenas pausas e limites saudáveis são essenciais para evitar o esgotamento extremo.</p>
+            </div>
+        </article>
+        <!--Card 2-->
+          <article class="card">
+            <div class="card-body">
+                <h5 class="card-title">Autocuidado não é egoísmo</h5>
+                    <p class="card-text">Descansar a mente é tão importante quanto revisar as matérias da semana. 
+                        Encontre tempo para desconectar e respirar sem sentir culpa por isso.</p>
+            </div>
+        </article>
+          <article class="card">
+            <div class="card-body">
+                <h5 class="card-title">Sinais de que é hora de parar</h5>
+                    <p class="card-text">Insônia constante, irritabilidade e cansaço extremo são alertas claros do corpo.
+                                        Não ignore os limites que a sua mente está tentando impor</p>
+            </div>
+        </article>
+      <!-- Controles do Carrossel (Setas nas pontas inferiores) -->
+    <button class="carrossel-control prev" aria-label="Anterior">&#10094;</button>
+    <button class="carrossel-control next" aria-label="Próximo">&#10095;</button>   
+    </div>       
+ </section>
 
-            <article>
-                <h3>Curiosidade 1</h3>
-                <p>
-                    Dormir bem contribui para o funcionamento adequado
-                    do cérebro e pode ajudar na regulação das emoções.
-                </p>
-            </article>
+    <hr class="hr">
 
-            <article>
-                <h3>Curiosidade 2</h3>
-                <p>
-                    Praticar atividades físicas regularmente pode
-                    contribuir para o bem-estar físico e mental.
-                </p>
-            </article>
-
-            <article>
-                <h3>Curiosidade 3</h3>
-                <p>
-                    Conversar sobre aquilo que estamos sentindo pode
-                    ajudar a compreender melhor nossas emoções e
-                    procurar soluções.
-                </p>
-            </article>
-
-            <article>
-                <h3>Curiosidade 4</h3>
-                <p>
-                    Pedir ajuda não é sinal de fraqueza. Procurar apoio
-                    é uma forma importante de cuidar de si mesmo.
-                </p>
-            </article>
-        </section>
-
-        <hr>
-
-        <!-- TERMÔMETRO INTERATIVO -->
+     <!-- TERMÔMETRO INTERATIVO -->
         <section id="termometro">
             <h2>Termômetro do Meu Dia</h2>
 
@@ -182,8 +222,9 @@
 
         <hr>
 
-        <!-- QUIZ -->
-        <section id="quiz">
+
+    <!-- QUIZ -->
+        <section id="quiz" class="quizz">
             <h2>Quiz - Mente Saudável</h2>
 
             <form onsubmit="verificarQuiz(event)">
@@ -296,7 +337,7 @@
     </main>
 
     <!-- MURAL VIRTUAL -->
-    <section id="mural">
+    <section id="mural" class="mural-motivacional">
         <h2>Escreva sua mensagem</h2>
 
         <p>
@@ -345,132 +386,3 @@
                 orientação de profissionais de saúde.
             </p>
         </footer>
-
-
-        <!-- JAVASCRIPT -->
-        <script>
-
-            // TERMÔMETRO
-            function mostrarNivel() {
-
-                const nivel = document.getElementById("nivel").value;
-                const valor = document.getElementById("valorNivel");
-                const mensagem = document.getElementById("mensagemNivel");
-
-                valor.textContent = nivel;
-
-                if (nivel <= 2) {
-
-                    mensagem.textContent =
-                        "Parece que hoje está sendo um dia difícil. Procure conversar com alguém de confiança e cuide de você.";
-
-                } else if (nivel <= 4) {
-
-                    mensagem.textContent =
-                        "Talvez seja um bom momento para fazer uma pausa e observar como você está se sentindo.";
-
-                } else if (nivel <= 7) {
-
-                    mensagem.textContent =
-                        "Você está em um nível intermediário. Reserve um momento para perceber suas necessidades.";
-
-                } else if (nivel <= 9) {
-
-                    mensagem.textContent =
-                        "Que bom! Aproveite esse momento e continue cuidando do seu bem-estar.";
-
-                } else {
-
-                    mensagem.textContent =
-                        "Você parece estar se sentindo muito bem hoje! Compartilhe essa energia positiva.";
-
-                }
-            }
-
-
-            // QUIZ
-            function verificarQuiz(event) {
-
-                event.preventDefault();
-
-                let pontos = 0;
-
-                const resposta1 =
-                    document.querySelector('input[name="pergunta1"]:checked');
-
-                const resposta2 =
-                    document.querySelector('input[name="pergunta2"]:checked');
-
-                const resposta3 =
-                    document.querySelector('input[name="pergunta3"]:checked');
-
-                if (resposta1 && resposta1.value === "b") {
-                    pontos++;
-                }
-
-                if (resposta2 && resposta2.value === "a") {
-                    pontos++;
-                }
-
-                if (resposta3 && resposta3.value === "c") {
-                    pontos++;
-                }
-
-                const resultado =
-                    document.getElementById("resultadoQuiz");
-
-                resultado.textContent =
-                    "Você acertou " + pontos + " de 3 perguntas.";
-
-                if (pontos === 3) {
-                    resultado.textContent +=
-                        " Parabéns! Você demonstrou bons conhecimentos sobre saúde mental.";
-                } else if (pontos >= 2) {
-                    resultado.textContent +=
-                        " Muito bem! Continue aprendendo sobre saúde mental.";
-                } else {
-                    resultado.textContent +=
-                        " Continue explorando o conteúdo do Mente Saudável.";
-                }
-            }
-
-
-            // MURAL
-            function publicarMensagem(event) {
-
-                event.preventDefault();
-
-                const nome =
-                    document.getElementById("nome").value;
-
-                const mensagem =
-                    document.getElementById("mensagem").value;
-
-                const mural =
-                    document.getElementById("muralMensagens");
-
-                const novaMensagem =
-                    document.createElement("p");
-
-                const nomeUsuario =
-                    document.createElement("strong");
-
-                nomeUsuario.textContent = nome + ": ";
-
-                novaMensagem.appendChild(nomeUsuario);
-
-                novaMensagem.appendChild(
-                    document.createTextNode(mensagem)
-                );
-
-                mural.appendChild(novaMensagem);
-
-                document.getElementById("nome").value = "";
-                document.getElementById("mensagem").value = "";
-            }
-
-        </script>
-
-</body>
-
-</html>
